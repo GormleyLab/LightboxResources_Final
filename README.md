@@ -19,6 +19,9 @@ This repository contains all files necessary for building a lightbox with 96 mul
   - FluorescenceAnalysisContinuous.ipynb
     - A jupyter notebook that can be used to continuously analyze sample data files in a given experiment. After running cells 1-3, cell 4 can be run over and over again with the sample file path name changed in order to simulate an automated fluorescence experiment. Of the sample data given, each experiment contains five timepoints with eight wells containing fluorescence data. So for example, run clean_data(r'C://...../SampleData1_1), then clean_data(r'C://...../SampleData1_2), then clean_data(r'C://...../SampleData1_3), etc.
 
+  - Python_LB_CommTest.py
+    - A python file that is used to test communication between a PC and the Arduino. Change the array "a" to product the matrix to be displayed by the LEDs on the lightbox. You can use the LightboxCalculator&Tester.py file to determine the 8-element array you wish to display. 
+      
 -Arduino .ino files are uploaded to the Ardruino module used in the lightbox for PC communicationa and LED multiplexing.
 
 -Lightbox PCB Files folder contains all output files for third-party manufacturers.
